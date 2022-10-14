@@ -33,32 +33,81 @@ const Navbar = () => {
 
 const JumBotron = () => {
 	return (
-        <div className="jumbotron m-5">
-			<h1 className="display-4"></h1>
-			<p className="lead"></p>
-			<a className="btn btn-primary btn-lg" href="" role="button"></a>
+		<div className= "container-fluid ">
+			<div className="jumbotron m-5 p-5 py-5 bg-light">
+				<h1 className="display-4">A Warm Welcome</h1>
+				<p className="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, officia magni, ipsum suscipit culpa pariatur deserunt delectus quaerat blanditiis quis at beatae optio! Temporibus numquam voluptatum, ipsa officia rerum esse?</p>
+				<a className="btn btn-primary btn-lg" href="" role="button">Call to Action!</a>
+			</div>
 		</div>
     )
  };
  const Cartas=()=>{
 	return(
-		<div class="row row-cols-1 row-cols-md-3 g-4">
-			<div class="col">
-				<div class="card h-100">
-					<img src="..." class="card-img-top" alt="...">
-					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+		<div className="album py-5 bg_light">
+			<div className="container-fluid">
+				<div className="row row-cols-3 row-cols-md-4 g-4 p-5 py-5 ">
+					<div className="col">
+						<div className="card h-100">
+						<div class="card-header p-5 text-muted text-center"> 500 x 325</div>
+							<div className="card-body">
+								<h5 className="card-title">Card title</h5>
+								<p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							</div>
+							<div className="card-footer text-center">
+							<a className="btn btn-primary btn-lg" href="" role="button">Call to Action!</a>
+							</div>
+						</div>
 					</div>
-					<div class="card-footer">
-						<small class="text-muted">Last updated 3 mins ago</small>
+					<div className="col">
+						<div className="card h-100">
+							<img src="..." className="card-img-top" alt="..."/>
+							<div className="card-body">
+								<h5 className="card-title">Card title</h5>
+								<p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							</div>
+							<div className="card-footer">
+								<small className="text-muted">Last updated 3 mins ago</small>
+							</div>
+						</div>
+					</div>
+					<div className="col">
+						<div className="card ;">
+							<img src="..." className="card-img-top" alt="..."/>
+							<div className="card-body">
+								<h5 className="card-title">Card title</h5>
+								<p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							</div>
+							<div className="card-footer">
+								<small className="text-muted">Last updated 3 mins ago</small>
+							</div>
+						</div>
+					</div>
+					<div className="col">
+						<div className="card h-100">
+							<img src="..." className="card-img-top" alt="..."/>
+							<div className="card-body">
+								<h5 className="card-title">Card title</h5>
+								<p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							</div>
+							<div className="card-footer">
+								<small className="text-muted">Last updated 3 mins ago</small>
+							</div>
+						</div>
 					</div>
 				</div>
-  			</div>
+			</div>
 		</div>
 	)
  };
+ const Footer=()=>{
+	return (
+			<div className="text-muted bg-dark py-8 mb-2">
+				<p className="text-light text-center">Copiryht</p>
+			</div>
 
+	)
+};
 //create your first component
 const Home = () => {
 	return (
@@ -66,6 +115,7 @@ const Home = () => {
 			<Navbar/>
 			<JumBotron/>
 			<Cartas/>
+			<Footer/>
 		</div>
 	);
 };
