@@ -44,60 +44,47 @@ const JumBotron = () => {
  };
  const Cartas=()=>{
 	return(
-		<div className="album py-5 bg_light">
-			<div className="container-fluid">
-				<div className="row row-cols-3 row-cols-md-4 g-4 p-5 py-5 ">
-					<div className="col">
-						<div className="card h-100">
-						<div class="card-header p-5 text-muted text-center"> 500 x 325</div>
-							<div className="card-body">
-								<h5 className="card-title">Card title</h5>
-								<p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-							</div>
-							<div className="card-footer text-center">
-							<a className="btn btn-primary btn-lg" href="" role="button">Call to Action!</a>
-							</div>
-						</div>
-					</div>
-					<div className="col">
-						<div className="card h-100">
-							<img src="..." className="card-img-top" alt="..."/>
-							<div className="card-body">
-								<h5 className="card-title">Card title</h5>
-								<p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-							</div>
-							<div className="card-footer">
-								<small className="text-muted">Last updated 3 mins ago</small>
-							</div>
-						</div>
-					</div>
-					<div className="col">
-						<div className="card ;">
-							<img src="..." className="card-img-top" alt="..."/>
-							<div className="card-body">
-								<h5 className="card-title">Card title</h5>
-								<p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-							</div>
-							<div className="card-footer">
-								<small className="text-muted">Last updated 3 mins ago</small>
-							</div>
-						</div>
-					</div>
-					<div className="col">
-						<div className="card h-100">
-							<img src="..." className="card-img-top" alt="..."/>
-							<div className="card-body">
-								<h5 className="card-title">Card title</h5>
-								<p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-							</div>
-							<div className="card-footer">
-								<small className="text-muted">Last updated 3 mins ago</small>
-							</div>
-						</div>
-					</div>
+		// <div className="album py-5 bg_light">row-cols-3 row-cols-md-4 g-4 p-5 py-5
+			// <div className="container">
+			<div className="row row-cols-1 row-cols-md-4 g-4 ">
+			<div className="col">
+			  <div className="card">
+				<img src="..." class="card-img-top" alt="..."/>
+				<div className="card-body">
+				  <h5 className="card-title">Card title</h5>
+				  <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
 				</div>
+			  </div>
 			</div>
-		</div>
+			<div className="col">
+			  <div className="card">
+				<img src="..." className="card-img-top" alt="..."/>
+				<div className="card-body">
+				  <h5 className="card-title">Card title</h5>
+				  <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+				</div>
+			  </div>
+			</div>
+			<div className="col">
+			  <div className="card">
+				<img src="..." className="card-img-top" alt="..."/>
+				<div className="card-body">
+				  <h5 className="card-title">Card title</h5>
+				  <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+				</div>
+			  </div>
+			</div>
+			<div className="col">
+			  <div className="card">
+				<img src="..." className="card-img-top" alt="..."/>
+				<div className="card-body">
+				  <h5 className="card-title">Card title</h5>
+				  <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+			
 	)
  };
  const Footer=()=>{
