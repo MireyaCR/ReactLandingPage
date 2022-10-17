@@ -1,5 +1,6 @@
 import React from "react";
 
+// import PropType from "prop-types";
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
 
@@ -41,24 +42,32 @@ const JumBotron = () => {
     )
  };
 
- const Carta = () => {
+ const Carta = (props) => {
 	return(			
 				<div class="col text-center">	
 					<div className="card bd-light">
-						<div class="card-header text-primary text-black-50 t-10 ">500*325
-							<img src="..." className="bd-placeholder-img card-img-top h-3" alt=""/>
+						<div class="card-header text-primary text-black-50 t-10 ">
+							{/* <img src={props.imageUrl} className="card-img-top h-3" alt=""/> */}
 						</div>
 						<div className="card-body">
-							<h5 className="card-title">Card title</h5>
-							<p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							{/* <h5 className="card-title">{props.title}</h5> */}
+							{/* <p className="card-text">{props.description}.</p> */}
 						</div>
 						<div className="card-footer">
-							<a href="#" className="btn btn-primary btn-sm">Find Out More</a>
+							{/* <a href={props.buttonUrl} className="btn btn-primary btn-sm">{props.buttonLabel}</a> */}
 						</div>
 					</div>
 				</div>		
 	)
  }
+//  Carta.propTypes = {
+// 	imageUrl: PropType.string,
+// 	title: PropType.string,	
+// 	description: PropType.string,
+// 	buttonUrl: PropType.string,
+// 	buttonLabel: PropType.string,
+// };
+
  const Cuerpo=()=>{
 	return(
 		 <div className="container-fluid">
@@ -66,7 +75,13 @@ const JumBotron = () => {
 				<JumBotron/>
 			</div>
 			<div className="row row-cols-1 row-cols-md-4 g-4 mx-5 mb-5">
-				<Carta/>
+				<Carta
+				// title="Card tittle"
+				// imageUrl="https://cdn.pixabay.com/photo/2022/08/31/10/20/buttercup-7422987_640.jpg"
+				// description="lorem."
+				// buttonUrl="https://en.wikipedia.org"
+				// buttonLabel="Find One More!"
+				/>
 				<Carta/>
 				<Carta/>
 				<Carta/>
